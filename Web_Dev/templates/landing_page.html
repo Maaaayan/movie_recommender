@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/picnic">
+    <link rel="stylesheet" href="../static/style.css">
+    <title>🎥Movie Recommender🎥</title>
+</head>
+<body>
+
+    <h1>Decison Movie Recommender</h1> 
+    <p>Welcome to the Decisions recommender</p>
+    <img src="../static/logo.png" width="400" height="300">
+    <p id="rating-paragraph">Rate some movies on a scale 1.0-5.0</p>
+    <form action="/recommendation">
+        Titanic: <input class="form" type="number" name="Titanic (1997)" value="4" min="1" max="5" step="0.5">
+        <br>
+        Hercules: <input class="form" type="number" name="Hercules (2014)" value="4" min="1" max="5" step="0.5">
+        <br>    
+        Guardians of the Galaxy: <input class="form" type="number" name="Guardians of the Galaxy (2014)" value="4" min="1" max="5" step="0.5">
+        <br>   
+        Madagascar: <input class="form" type="number" name="Madagascar (2005)" value="4" min="1" max="5" step="0.5">
+        <br>   
+        <input type="submit" value="Sending to the Recommendation">
+    </form>
+    <p>Go to the 
+    <a href="/recommendation">recommendations</a>
+    </p>
+
+</body>
+</html>
