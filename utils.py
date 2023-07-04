@@ -30,7 +30,7 @@ def cosim_model(query, k=10):
     Returns:
         list: topk movies
     """
-    df = pd.read_csv('./data/user_movie.csv')
+    df = pd.read_csv('./data/user_movie.csv', nrows=1000))
     df = df.fillna(value=0)
     df.set_index('userId', inplace=True)
 
